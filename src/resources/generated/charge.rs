@@ -166,6 +166,7 @@ pub struct Charge {
     pub refunded: bool,
 
     /// A list of refunds that have been applied to the charge.
+    #[serde(default)]
     pub refunds: List<Refund>,
 
     /// ID of the review associated with this charge if one exists.
